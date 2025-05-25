@@ -1,4 +1,4 @@
-const lines = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+const lines = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
 let i = 0;
 let result = '';
