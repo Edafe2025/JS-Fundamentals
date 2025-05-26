@@ -1,14 +1,12 @@
-const arg = process.argv[2];
-
-if (!arg || isNaN(Number(arg))) {
-  console.log("No argument");
-  process.exit(0);
-}
+const num = Number(process.argv[2]);
 
 function factorial(n) {
   if (n <= 1) return 1;
   return n * factorial(n - 1);
 }
 
-const num = Number(arg);
-console.log(factorial(num));
+if (!num || num < 0 || isNaN(num)) {
+  console.log(1);
+} else {
+  console.log(factorial(num));
+}
